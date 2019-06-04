@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+.home{
+	font-family: 'Merriweather';
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+	background: #eceded;
+	color: #4c463b;
+}

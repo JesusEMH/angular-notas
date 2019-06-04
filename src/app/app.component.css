@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration-line: none;
+}
+
+.nav{
+	display: grid;
+	grid-template-columns: 20em 3em 3em 1fr;
+	background: #87ecad;
+	align-items: center;
+	height: 4em;
+	padding-left: 1em;
+	font-family: 'Merriweather';
+	border: 1px solid #8cbc98;
+	box-shadow: inset 0px 0px 1em 0px #89ce98;
+}
+
+.nav ul{
+	display: flex;
+	grid-gap: 1.4em;
+	padding: .7em;
+}
+
+.nav li{
+	font-size: 1.2em;
+}
+
+.nav a{
+	padding: .4em;
+	color: #4c463b;
+}
+.active{
+	background:#7ddab6;
+}
+
+.titulo{
+	 color: #4c463b;
+	 font-size: 1.6em;
+}

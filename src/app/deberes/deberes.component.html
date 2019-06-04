@@ -1,0 +1,21 @@
+<div class="grid">  
+
+
+         <article class="form-div">
+          <div class="article">
+              <p class="form-titulo">NUEVA NOTA</p>
+              <input type="text" placeholder="Titulo de la nota" [(ngModel)]="note.title">
+              <textarea placeholder="Cuerpo de la nota" [(ngModel)]="note.description"></textarea>
+              <div>
+                  <a class="boton" (click)="createNote()">GUARDAR NOTA</a>
+              </div>
+          </div>
+         </article>
+          <div class="notas-div">
+            <article class="nota" *ngFor="let n of my_notes; let indice = index">
+              <section class="section-titulo">{{n.title}}</section>
+              <section class="section-descripcion">{{n.description}}</section>
+              <a class="boton-borrar" (click)="deleteNote(indice)">BORRAR</a>
+            </article>
+          </div>
+</div>
